@@ -175,6 +175,20 @@ body {
     overflow: hidden;
 }
 
+/* Prevent inactive card face from blocking touch interactions on iOS */
+.card-wrapper:not(.is-flipped) .card-front {
+    pointer-events: auto;
+}
+.card-wrapper:not(.is-flipped) .card-back {
+    pointer-events: none;
+}
+.card-wrapper.is-flipped .card-front {
+    pointer-events: none;
+}
+.card-wrapper.is-flipped .card-back {
+    pointer-events: auto;
+}
+
 /* ==========================================================================
    TOGGLE BUTTON
    ========================================================================== */
@@ -418,7 +432,11 @@ body {
     margin-top: 48px;
     height: calc(100% - 48px);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iOS */
     padding-right: 6px;
+    position: relative;
+    z-index: 10;
+    transform: translate3d(0, 0, 0); /* Fix iOS Safari 3D transform scroll bug */
 }
 
 /* Custom Scrollbar */
