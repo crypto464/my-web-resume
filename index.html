@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김가영 | AI 사무자동화 전문가</title>
+    <meta name="description" content="AI와 디지털 도구로 스마트 워크를 실천하는 사무 전문가 김가영의 디지털 명함 및 이력서">
+
+    <!-- Open Graph (카카오톡, 페이스북 등 SNS 공유 시 미리보기) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="김가영 | AI 사무자동화 전문가">
+    <meta property="og:description" content="AI와 디지털 도구로 스마트 워크를 실천하는 사무 전문가 김가영의 디지털 명함 및 이력서입니다.">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="김가영 포트폴리오">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card (트위터/X 공유 시 미리보기) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="김가영 | AI 사무자동화 전문가">
+    <meta name="twitter:description" content="AI와 디지털 도구로 스마트 워크를 실천하는 사무 전문가 김가영의 디지털 명함 및 이력서입니다.">
+    <meta name="twitter:image" content="og-image.png">
+    <!-- Google Fonts: Outfit (modern geometric) & Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Mesh Gradient Background -->
+    <div class="mesh-bg">
+        <div class="mesh-blob mesh-1"></div>
+        <div class="mesh-blob mesh-2"></div>
+        <div class="mesh-blob mesh-3"></div>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <div class="container">
+        <!-- 3D Card Wrapper -->
+        <div class="card-wrapper" id="cardWrapper">
+
+            <!-- ===================================================
+                 CARD FRONT: BUSINESS CARD (명함)
+                 =================================================== -->
+            <div class="card-face card-front">
+                <!-- Toggle Button -->
+                <button class="toggle-btn" id="toggleToResume" aria-label="이력서 보기">
+                    <span>이력서 보기</span>
+                    <i data-lucide="file-text"></i>
+                </button>
+
+                <!-- Card Content -->
+                <div class="card-content">
+                    <!-- Profile Section -->
+                    <div class="profile-section animate-item">
+                        <div class="avatar-wrapper">
+                            <img src="profile.png" alt="김가영 프로필 캐리커처" class="avatar-img">
+                        </div>
+                        <h1 class="name">김가영</h1>
+                        <p class="tagline">AI와 디지털 도구로 스마트 워크를 실천하는 사무 전문가</p>
+                    </div>
+
+                    <div class="divider animate-item"></div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item animate-item">
+                            <div class="info-icon-box">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">이메일</span>
+                                <a href="mailto:gayeong.kim@example.com">gayeong.kim@example.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item animate-item">
+                            <div class="info-icon-box">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">연락처</span>
+                                <a href="tel:010-1234-5678">010-1234-5678</a>
+                            </div>
+                        </div>
+                        <div class="info-item animate-item">
+                            <div class="info-icon-box">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://linkedin.com" target="_blank">linkedin.com/in/gayeong</a>
+                            </div>
+                        </div>
+                        <div class="info-item animate-item">
+                            <div class="info-icon-box">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">지역</span>
+                                <span>서울특별시</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Footer -->
+                <div class="card-footer animate-item">
+                    <span class="brand">SMART WORK · PORTFOLIO</span>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>구직 중</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================================================
+                 CARD BACK: RESUME (이력서)
+                 =================================================== -->
+            <div class="card-face card-back">
+                <!-- Toggle Button (Same Position) -->
+                <button class="toggle-btn" id="toggleToCard" aria-label="명함 보기">
+                    <span>명함 보기</span>
+                    <i data-lucide="id-card"></i>
+                </button>
+
+                <!-- Resume Content -->
+                <div class="resume-content">
+                    <div class="resume-header animate-item">
+                        <h2 class="resume-title">이력서</h2>
+                        <p class="resume-subtitle">경력 보유 · AI 사무자동화 전문가</p>
+                    </div>
+
+                    <!-- Section: About Me -->
+                    <section class="resume-section animate-item">
+                        <h3 class="section-title"><i data-lucide="user-circle"></i> 자기소개</h3>
+                        <p class="section-text">
+                            꼼꼼한 행정 실무 경험과 AI 자동화 역량을 결합하여,
+                            <strong>반복적인 수작업을 시스템으로 전환하고 업무 효율을 극대화</strong>하는 스마트 오피스 전문가입니다.
+                            출산과 육아 기간 동안에도 끊임없이 최신 AI/디지털 도구를 학습하며 재취업 역량을 준비해 왔습니다.
+                        </p>
+                    </section>
+
+                    <!-- Section: Core Competency -->
+                    <section class="resume-section animate-item">
+                        <h3 class="section-title"><i data-lucide="sparkles"></i> 핵심 역량</h3>
+                        <div class="competency-grid">
+                            <div class="competency-card">
+                                <i data-lucide="bot"></i>
+                                <span>AI 업무 자동화</span>
+                            </div>
+                            <div class="competency-card">
+                                <i data-lucide="table-2"></i>
+                                <span>데이터 정리/분석</span>
+                            </div>
+                            <div class="competency-card">
+                                <i data-lucide="file-spreadsheet"></i>
+                                <span>문서 작성/관리</span>
+                            </div>
+                            <div class="competency-card">
+                                <i data-lucide="message-square"></i>
+                                <span>비즈니스 커뮤니케이션</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section: Tech Skills -->
+                    <section class="resume-section animate-item">
+                        <h3 class="section-title"><i data-lucide="wrench"></i> 활용 가능 도구</h3>
+                        <div class="tech-tags">
+                            <span class="tag tag-ai">ChatGPT / Gemini</span>
+                            <span class="tag tag-ai">AI 에이전트</span>
+                            <span class="tag">MS Office (Excel, PPT, Word)</span>
+                            <span class="tag">Google Workspace</span>
+                            <span class="tag">Notion / Slack</span>
+                            <span class="tag">HTML / CSS / JS 기초</span>
+                            <span class="tag">웹 포트폴리오 제작</span>
+                        </div>
+                    </section>
+
+                    <!-- Section: Experience Timeline -->
+                    <section class="resume-section animate-item">
+                        <h3 class="section-title"><i data-lucide="clock"></i> 경험 및 활동</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot current"></div>
+                                <div class="timeline-body">
+                                    <span class="time-period">2026.05 — 현재</span>
+                                    <h4 class="timeline-title">AI 사무자동화 실전 프로젝트</h4>
+                                    <p class="timeline-desc">AI 에이전트를 활용한 이메일 자동 분류, 독서 기록 비서 프로그램 제작, 반응형 웹 명함 및 포트폴리오 사이트 개발/배포.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="time-period">2026.01 — 2026.04</span>
+                                    <h4 class="timeline-title">AI 사무자동화 교육과정 수료</h4>
+                                    <p class="timeline-desc">ChatGPT, Gemini 등 생성형 AI 활용법 및 업무 자동화(Excel 매크로, 데이터 분석) 실습 과정 이수.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="time-period">2020 — 2022</span>
+                                    <h4 class="timeline-title">○○기업 경영지원팀 사원</h4>
+                                    <p class="timeline-desc">총무·인사 행정 업무 전반 담당. 사내 문서 양식 표준화 및 비품 관리 시스템 개선으로 부서 업무 효율 20% 향상.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section: Education -->
+                    <section class="resume-section animate-item">
+                        <h3 class="section-title"><i data-lucide="graduation-cap"></i> 학력</h3>
+                        <div class="education-item">
+                            <span class="time-period">2016 — 2020</span>
+                            <h4 class="timeline-title">○○대학교 경영학과 졸업</h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
