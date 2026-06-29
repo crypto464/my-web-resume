@@ -189,6 +189,20 @@ body {
     pointer-events: auto;
 }
 
+/* Prevent inactive card face from blocking touch interactions on iOS */
+.card-wrapper:not(.is-flipped) .card-front {
+    pointer-events: auto;
+}
+.card-wrapper:not(.is-flipped) .card-back {
+    pointer-events: none;
+}
+.card-wrapper.is-flipped .card-front {
+    pointer-events: none;
+}
+.card-wrapper.is-flipped .card-back {
+    pointer-events: auto;
+}
+
 /* ==========================================================================
    TOGGLE BUTTON
    ========================================================================== */
